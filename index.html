@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayana Sosa — Portafolio</title>
+    <meta name="description"
+        content="Portafolio de Dayana Sosa, estudiante de Ingeniería en Ciencias de la Computación en Honduras.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles.less">
+</head>
+
+<body>
+
+    <header class="nav">
+        <div class="nav__inner">
+            <a href="#inicio" class="nav__brand">D.Sosa</a>
+
+            <nav class="nav__links" id="navLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <button class="nav__burger" id="navBurger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero__glow"></div>
+
+        <div class="hero__img">
+            <img src="/src/assets/perfil.jpeg" alt="Foto de Dayana Sosa" id="profileImg">
+            <div class="hero__fallback" id="fallback">D</div>
+        </div>
+
+        <p class="hero__kicker">// Estudiante de Ingeniería en Ciencias de la Computación</p>
+        <h1 class="hero__title">Ingeniera Dayana Sosa.</h1>
+        <p class="hero__subtitle" id="typedText"></p>
+        <p class="hero__bio">
+            Estoy en tercer año de Ingeniería en Ciencias de la Computación en la
+            Universidad Católica de Honduras. Llevo cerca de dos años y medio
+            aprendiendo a programar, principalmente con <strong>C# y WPF</strong>
+            para aplicaciones de escritorio, y <strong>HTML, CSS y JavaScript</strong>
+            para la web. Me gusta investigar formas de diseñar y programar cosas,
+            sobre todo lo relacionado con diseño de páginas.
+        </p>
+
+        <div class="hero__actions">
+            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn--ghost">Contactarme</a>
+        </div>
+
+        <div class="hero__links">
+            <a href="https://github.com/daySosa" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://github.com/daySosa/portafolio" target="_blank" rel="noopener">Repositorio ↗</a>
+        </div>
+    </section>
+
+    <section class="section fade-in" id="sobre-mi">
+        <p class="section__kicker">Sobre mí</p>
+        <p>
+            Estudio Ingeniería en Ciencias de la Computación en la Universidad
+            Católica de Honduras, actualmente en tercer año. Llevo alrededor de
+            dos años y medio programando.
+        </p>
+        <p>
+            Estoy aprendiendo <strong>C#</strong> (con WPF, para aplicaciones de
+            escritorio) y desarrollo web con <strong>HTML, CSS y JavaScript</strong>.
+            Me gusta investigar formas de diseñar y programar cosas, sobre todo
+            todo lo relacionado con diseño de páginas web.
+        </p>
+
+        <div class="chips">
+            <span>C#</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>HTML &amp; CSS</span>
+            <span>WPF</span>
+        </div>
+    </section>
+
+    <section class="section section--alt fade-in" id="proyectos">
+        <p class="section__kicker">Proyectos</p>
+        <h2>Lo que he construido</h2>
+        <p class="section__lead">Algunas cosas que he hecho hasta ahora.</p>
+
+        <div class="projects-grid" id="projectsGrid">
+        </div>
+    </section>
+
+    <section class="section fade-in" id="cursos">
+        <p class="section__kicker">Cursos</p>
+        <h2>Cursos y certificaciones</h2>
+        <p class="section__lead">Cursos de Cisco Networking Academy que he completado.</p>
+
+        <div class="courses-list">
+            <div class="course-item">
+                <span class="course-item__name">CCNA: Introducción a las redes</span>
+                <span class="course-item__date">Dic 2025</span>
+            </div>
+            <div class="course-item">
+                <span class="course-item__name">Fundamentos de Python 1</span>
+                <span class="course-item__date">Feb 2026</span>
+            </div>
+            <div class="course-item">
+                <span class="course-item__name">CCNA: Switching, Routing and Wireless Essentials</span>
+                <span class="course-item__date">Abr 2026</span>
+            </div>
+            <div class="course-item">
+                <span class="course-item__name">Linux Unhatched</span>
+                <span class="course-item__date">Jun 2026</span>
+            </div>
+            <div class="course-item">
+                <span class="course-item__name">Descubriendo el Emprendimiento</span>
+                <span class="course-item__date">Jul 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt fade-in" id="contacto">
+        <p class="section__kicker">Contacto</p>
+
+        <ul class="contact__list">
+            <li><a href="mailto:daym_sosan50@unicah.edu">daym_sosan50@unicah.edu</a></li>
+            <li><a href="https://github.com/daySosa" target="_blank" rel="noopener">github.com/daySosa</a>
+            </li>
+            <li><a href="https://wa.me/504XXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>Hecho por Dayana Sosa· <span id="year"></span></p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

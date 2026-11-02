@@ -1,0 +1,17 @@
+{
+  "name": "portafolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^8.0.0",
+    "less": "^4.9.1",
+    "postcss": "^8.5.32",
+    "vite": "^8.3.5"
+  }
+}
